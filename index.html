@@ -1,0 +1,288 @@
+<!doctype html><html lang="sk"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Corner Barber Shop · pánske holičstvo v Spišskej Sobote, Poprad — neoficiálny návrh</title>
+<meta name="description" content="Neoficiálny návrh homepage pre Corner Barber Shop — pánske strihy a úprava brady na Sobotskom námestí v Poprade-Spišskej Sobote.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Libre+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#141315; --night-2:#1E1C1F; --canvas:#DEDDD6; --canvas-2:#CFCEC6; --red:#C8302C; --red-d:#9A211F;
+  --chalk:#F4F2EE; --leather:#8C6B50; --steel:#9CA1A6; --ink:#141315; --mute:#5E5C5A; --mute-lt:#A9A6A2;
+  --hair:rgba(244,242,238,.16); --hair-d:rgba(20,19,21,.18);
+  --disp:"Anton",Impact,"Arial Narrow",sans-serif; --sans:"Libre Franklin",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --ropes:linear-gradient(var(--chalk),var(--chalk)) 0 0/100% 6px no-repeat,linear-gradient(var(--red),var(--red)) 0 15px/100% 6px no-repeat,linear-gradient(var(--chalk),var(--chalk)) 0 30px/100% 6px no-repeat;
+  --ropes-v:linear-gradient(var(--chalk),var(--chalk)) 0 0/6px 100% no-repeat,linear-gradient(var(--red),var(--red)) 15px 0/6px 100% no-repeat,linear-gradient(var(--chalk),var(--chalk)) 30px 0/6px 100% no-repeat;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--night);color:var(--chalk);font:400 17px/1.6 var(--sans);overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.w{max-width:1180px;margin:0 auto;padding-left:28px;padding-right:28px}
+.num{font-variant-numeric:tabular-nums}
+.cap{font:700 12px/1.3 var(--sans);letter-spacing:.2em;text-transform:uppercase}
+.u{text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .2s}
+.u:hover{background-size:100% 1px}
+
+.notice{background:var(--chalk);color:var(--night);font:500 13.5px/1.45 var(--sans);text-align:center;padding:9px 16px}
+
+/* corner mark: pad + 3 ropes */
+.mark{display:flex;align-items:center;gap:0;margin-bottom:18px}
+.mark i{flex:none;width:22px;height:22px;border-radius:5px;background:var(--red);box-shadow:inset -3px -3px 0 rgba(0,0,0,.22)}
+.mark span{margin-left:12px}
+.mark::after{content:"";flex:0 0 64px;height:21px;margin-left:14px;background:var(--ropes);background-size:100% 3px;background-position:0 2px,0 9px,0 16px;opacity:.9}
+
+/* header */
+.hd{display:flex;align-items:center;gap:24px;min-height:80px;border-bottom:1px solid var(--hair)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand .pad{width:42px;height:42px;border-radius:9px;background:var(--red);display:grid;place-items:center;font:400 26px/1 var(--disp);color:var(--chalk);box-shadow:inset -4px -4px 0 rgba(0,0,0,.22)}
+.brand b{display:block;font:400 25px/1 var(--disp);letter-spacing:.04em;text-transform:uppercase}
+.brand small{display:block;font:600 11px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--mute-lt);margin-top:5px}
+nav{margin-left:auto;display:flex;gap:30px}
+nav a{font:600 14px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;padding:14px 0}
+.hd-tel{font:700 15px/1 var(--sans);text-decoration:none;background:var(--red);padding:15px 20px;border-radius:4px;transition:background .2s}
+.hd-tel:hover{background:var(--red-d)}
+
+/* hero */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--hair)}
+.hero-g{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center;min-height:min(620px,82vh);padding-top:56px;padding-bottom:72px}
+.hero .cap{color:var(--mute-lt)}
+h1{font:400 clamp(72px,11.5vw,156px)/.86 var(--disp);text-transform:uppercase;letter-spacing:.005em;margin:20px 0 0}
+h1 span{display:block;font-size:.43em;line-height:1.05;letter-spacing:.06em;color:var(--red);margin-top:12px}
+.lede{max-width:40ch;margin:26px 0 0;color:#D9D6D1;font-size:18px}
+.lede q{font-style:italic}
+.src{display:block;font:500 13px/1.4 var(--sans);color:var(--mute-lt);margin-top:6px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;border-radius:4px;font:700 15px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:background .2s,color .2s}
+.btn-r{background:var(--red);color:var(--chalk)}
+.btn-r:hover{background:var(--red-d)}
+.btn-o{border:2px solid var(--chalk)}
+.btn-o:hover{background:var(--chalk);color:var(--night)}
+.btn-k{background:var(--night);color:var(--chalk)}
+.btn-k:hover{background:#000}
+
+.ring{position:relative;padding:46px 0 0 46px}
+.ring::before{content:"";position:absolute;left:56px;right:-100vw;top:5px;height:36px;background:var(--ropes)}
+.ring::after{content:"";position:absolute;top:56px;bottom:-200px;left:5px;width:36px;background:var(--ropes-v)}
+.post{position:absolute;left:0;top:0;width:46px;height:46px;border-radius:10px;background:var(--red);box-shadow:inset -5px -5px 0 rgba(0,0,0,.25),0 6px 18px rgba(0,0,0,.45);z-index:2}
+.post::after{content:"";position:absolute;inset:13px;border-radius:50%;border:2px solid rgba(244,242,238,.75)}
+.ring figure{position:relative;overflow:hidden;border-radius:2px}
+.ring img{width:100%;aspect-ratio:5/4;object-position:30% 50%;object-fit:cover;transition:transform .5s}
+.ring figure:hover img{transform:scale(1.045)}
+.ring figcaption{position:absolute;left:0;bottom:0;background:var(--night);color:var(--chalk);font:600 12px/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase;padding:10px 14px}
+.facts{display:flex;flex-wrap:wrap;margin-top:40px;border-top:1px solid var(--hair)}
+.facts div{padding:16px 24px 0 0;margin-right:24px;border-right:1px solid var(--hair)}
+.facts div:last-child{border:0;margin:0}
+.facts b{display:block;font:400 26px/1.1 var(--disp);letter-spacing:.03em}
+.facts span{font:500 13px/1.4 var(--sans);color:var(--mute-lt)}
+
+/* price card */
+.card{background:var(--red);color:var(--chalk);padding:88px 0 92px;position:relative}
+.card-top{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:40px}
+.card .mark i{background:var(--night)}
+.card .mark::after{background:linear-gradient(var(--chalk),var(--chalk)) 0 2px/100% 3px no-repeat,linear-gradient(var(--night),var(--night)) 0 9px/100% 3px no-repeat,linear-gradient(var(--chalk),var(--chalk)) 0 16px/100% 3px no-repeat}
+h2{font:400 clamp(44px,6.2vw,84px)/1 var(--disp);text-transform:uppercase;letter-spacing:.01em}
+.card-top p{max-width:44ch;color:rgba(244,242,238,.9)}
+.bouts{list-style:none;border-top:3px solid var(--night)}
+.bouts li{display:grid;grid-template-columns:1fr 110px 170px;gap:24px;align-items:baseline;padding:20px 0;border-bottom:1px solid rgba(20,19,21,.35)}
+.bouts h3{font:400 clamp(22px,2.4vw,30px)/1.12 var(--disp);text-transform:uppercase;letter-spacing:.02em}
+.bouts h3 small{display:block;font:500 14px/1.4 var(--sans);text-transform:none;letter-spacing:0;color:rgba(244,242,238,.82);margin-top:4px}
+.bouts .t{font:600 14px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--night)}
+.bouts .p{font:700 clamp(24px,2.6vw,32px)/1 var(--sans);text-align:right;letter-spacing:-.01em}
+.card-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:18px;margin-top:34px}
+.card-foot small{font:500 14px/1.5 var(--sans);max-width:60ch;color:rgba(244,242,238,.88)}
+
+/* corner instructions */
+.info{background:var(--canvas);color:var(--ink);padding:92px 0}
+.info .cap{color:var(--mute)}
+.info-g{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.info h2{margin-bottom:22px}
+.info p{color:#3E3C3A;max-width:42ch}
+.razors{margin-top:34px;max-width:520px;border-top:1px solid var(--hair-d);border-bottom:1px solid var(--hair-d);padding:14px 0}
+.razors img{width:100%;filter:saturate(.85) contrast(1.05)}
+.razors small{display:block;font:500 12.5px/1.4 var(--sans);color:var(--mute);margin-top:8px}
+.tips{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:3px solid var(--ink)}
+.tips li{padding:26px 24px 26px 0;border-bottom:1px solid var(--hair-d)}
+.tips li:nth-child(odd){border-right:1px solid var(--hair-d)}
+.tips li:nth-child(even){padding-left:24px}
+.tips b{display:block;font:400 26px/1.1 var(--disp);text-transform:uppercase;letter-spacing:.02em;margin-bottom:8px}
+.tips span{font:400 15.5px/1.5 var(--sans);color:#3E3C3A}
+.tips em{font-style:normal;font-weight:700;color:var(--red-d)}
+
+/* rating + contact */
+.kontakt{padding:92px 0 100px}
+.k-g{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.score{display:flex;align-items:flex-end;gap:18px;margin:36px 0 22px}
+.score b{font:400 112px/.82 var(--disp)}
+.score span{font:500 15px/1.4 var(--sans);color:var(--mute-lt);padding-bottom:4px}
+.kontakt .cap{color:var(--mute-lt)}
+.kontakt p{color:#CFCBC6;max-width:42ch}
+.links{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+dl{border-top:3px solid var(--red)}
+.k-row{display:grid;grid-template-columns:120px 1fr;gap:18px;padding:18px 0;border-bottom:1px solid var(--hair)}
+.k-row dt{font:700 11.5px/1.8 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--mute-lt)}
+.k-row dd{font:500 18px/1.5 var(--sans)}
+.k-row dd a{font-weight:700}
+.ov{display:inline-block;font:700 10.5px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#E9A29F;border:1px solid currentColor;padding:4px 6px 3px;margin-left:8px;vertical-align:3px}
+.k-row small{display:block;font:500 13px/1.45 var(--sans);color:var(--mute-lt);margin-top:3px}
+
+footer{border-top:1px solid var(--hair);padding:28px 0 32px;font:500 14px/1.5 var(--sans);color:var(--mute-lt)}
+.ft{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.ft b{font:400 20px/1 var(--disp);letter-spacing:.04em;text-transform:uppercase;color:var(--chalk)}
+
+.mbar{display:none}
+@media (max-width:980px){
+  nav{display:none}
+  .hero-g{grid-template-columns:1fr;gap:44px;min-height:0;padding-top:40px;padding-bottom:64px}
+  .card-top,.info-g,.k-g{grid-template-columns:1fr}
+  .info-g{gap:40px}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .w{padding-left:18px;padding-right:18px}
+  .hd{min-height:68px;gap:12px}
+  .brand b{font-size:21px}
+  .hd-tel{display:none}
+  .hero-g{padding-top:30px;padding-bottom:52px}
+  .ring{padding:34px 0 0 34px}
+  .ring::before{left:42px;top:4px;height:26px;background-size:100% 4px;background-position:0 0,0 11px,0 22px}
+  .ring::after{left:4px;top:42px;width:26px;background-size:4px 100%;background-position:0 0,11px 0,22px 0}
+  .post{width:34px;height:34px;border-radius:8px}
+  .post::after{inset:9px}
+  .facts div{padding-right:16px;margin-right:16px}
+  .facts b{font-size:22px}
+  .card{padding:64px 0 70px}
+  .bouts li{grid-template-columns:1fr auto;gap:4px 16px;padding:16px 0}
+  .bouts .t{grid-column:1;grid-row:2}
+  .bouts .p{grid-column:2;grid-row:1/3;align-self:center;font-size:24px}
+  .info,.kontakt{padding:68px 0}
+  .tips{grid-template-columns:1fr}
+  .tips li:nth-child(odd){border-right:0}
+  .tips li:nth-child(even){padding-left:0}
+  .tips li{padding:20px 0}
+  .k-row{grid-template-columns:1fr;gap:2px}
+  .score b{font-size:92px}
+  footer{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--night);border-top:1px solid var(--hair);padding:8px 12px calc(8px + env(safe-area-inset-bottom))}
+  .mbar a{display:flex;align-items:center;justify-content:center;min-height:48px;border-radius:4px;font:700 15px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:2px solid var(--chalk)}
+  .mbar a:first-child{background:var(--red);border-color:var(--red)}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="notice">Neoficiálny návrh — nie je to oficiálny web podniku · ukážka od webdavid.sk, objednávky ani rezervácie tu nefungujú</div>
+
+<header class="w">
+  <div class="hd">
+    <a class="brand" href="#top" aria-label="Corner Barber Shop — na začiatok">
+      <span class="pad" aria-hidden="true">C</span>
+      <span><b>Corner</b><small>Barber Shop · Poprad</small></span>
+    </a>
+    <nav aria-label="Hlavná navigácia">
+      <a class="u" href="#cennik">Cenník</a>
+      <a class="u" href="#info">Pred návštevou</a>
+      <a class="u" href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="hd-tel num" href="tel:+421944387587">0944 387 587</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h1">
+  <div class="w hero-g">
+    <div>
+      <p class="cap">Pánske holičstvo · Spišská Sobota, Poprad</p>
+      <h1 id="h1">Corner<span>Barber Shop</span></h1>
+      <p class="lede"><q>V popradskom Corner Barber Shope poskytujeme prvotriedne kadernícke služby pre pánov – od elegantnej klasiky až po výstredné trendy účesy…</q></p>
+      <span class="src">— z ich profilu na Notino</span>
+      <div class="cta">
+        <a class="btn btn-r num" href="tel:+421944387587">Zavolať 0944 387 587</a>
+        <a class="btn btn-o" href="#cennik">Cenník</a>
+      </div>
+      <div class="facts">
+        <div><b class="num">4,9 ★</b><span>Google · 31 hodnotení</span></div>
+        <div><b>Od 10 €</b><span>úprava brady</span></div>
+        <div><b>Hotovosť</b><span>platba len v hotovosti</span></div>
+      </div>
+    </div>
+    <div class="ring">
+      <span class="post" aria-hidden="true"></span>
+      <figure>
+        <img src="assets/holicske-kreslo.webp" width="1350" height="900" fetchpriority="high" alt="Kožené holičské kreslo pred dreveným pracoviskom v Corner Barber Shope">
+        <figcaption>Váš roh · Sobotské námestie</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="card" id="cennik" aria-labelledby="h-cennik">
+  <div class="w">
+    <div class="card-top">
+      <div><p class="mark cap"><i></i><span>Cenník</span></p><h2 id="h-cennik">Šesť služieb,<br>jeden roh</h2></div>
+      <p>Strih, brada alebo všetko naraz. Termín si dohodnete telefonicky — online rezervácia na portáli nie je.</p>
+    </div>
+    <ol class="bouts">
+      <li><h3>Pánsky strih</h3><span class="t num">30–45 min</span><span class="p num">15–16,50 €</span></li>
+      <li><h3>Junior strih<small>do 12 rokov</small></h3><span class="t num">30 min</span><span class="p num">12–16,50 €</span></li>
+      <li><h3>Úprava brady</h3><span class="t num">30 min</span><span class="p num">10–11 €</span></li>
+      <li><h3>Pánsky strih strojčekom<small>a úprava brady</small></h3><span class="t num">45 min</span><span class="p num">21–23 €</span></li>
+      <li><h3>Pánsky strih a holenie brady britvou<small>+ Hot Towel</small></h3><span class="t num">45 min</span><span class="p num">22,50 €</span></li>
+      <li><h3>Kompletná starostlivosť<small>o vlasy a bradu</small></h3><span class="t num">45 min</span><span class="p num">25 €</span></li>
+    </ol>
+    <div class="card-foot">
+      <small>Ceny a časy podľa profilu na Notino, 4. 10. 2026 — pred návštevou overiť. Platba len v hotovosti.</small>
+      <a class="btn btn-k num" href="tel:+421944387587">Objednať sa: 0944 387 587</a>
+    </div>
+  </div>
+</section>
+
+<section class="info" id="info" aria-labelledby="h-info">
+  <div class="w info-g">
+    <div>
+      <p class="mark cap"><i></i><span>Pred návštevou</span></p>
+      <h2 id="h-info">Pokyny z rohu</h2>
+      <p>Holičstvo v Spišskej Sobote s koženým kreslom, britvami na stene a dreveným pracoviskom. Toto je dobré vedieť, kým prídete.</p>
+      <div class="razors">
+        <img src="assets/britvy-na-stene.webp" width="520" height="128" loading="lazy" alt="Tri staré britvy zavesené na stene holičstva">
+        <small>Britvy na stene holičstva</small>
+      </div>
+    </div>
+    <ul class="tips">
+      <li><b>Objednajte sa telefonom</b><span>Rezervácia ide cez telefón <a class="u num" href="tel:+421944387587"><em>0944 387 587</em></a>, nie online.</span></li>
+      <li><b>Hotovosť so sebou</b><span>Platí sa <em>len v hotovosti</em>.</span></li>
+      <li><b>Darčekové poukážky</b><span>Darčekové poukážky sa akceptujú.</span></li>
+      <li><b>Parkovanie</b><span>Na vyššie položenom parkovisku pri budove.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="kontakt" id="kontakt" aria-labelledby="h-k">
+  <div class="w k-g">
+    <div>
+      <p class="mark cap"><i></i><span>Kontakt</span></p>
+      <h2 id="h-k">Sobotské námestie</h2>
+      <div class="score"><b class="num">4,9</b><span>★ na Google<br>31 hodnotení · 30. 9. 2026</span></div>
+      <p>Otváracie hodiny zatiaľ nie sú zverejnené — pred cestou zavolajte a dohodnite si termín.</p>
+      <div class="links">
+        <a class="btn btn-r" href="https://www.google.com/maps/search/Corner+Barber+Shop+Sobotské+námestie+42+Poprad" target="_blank" rel="noopener">Mapy Google</a>
+        <a class="btn btn-o" href="https://www.instagram.com/corner_barber_shop/" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn btn-o" href="https://www.facebook.com/p/Corner-BarberShop-Poprad-61554409767662/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <dl>
+      <div class="k-row"><dt>Adresa</dt><dd>Sobotské námestie 42<br>058 01 Poprad – Spišská Sobota<span class="ov">overiť</span><small>podľa Notino a Facebooku</small></dd></div>
+      <div class="k-row"><dt>Telefón</dt><dd><a class="u num" href="tel:+421944387587">+421 944 387 587</a></dd></div>
+      <div class="k-row"><dt>Hodiny</dt><dd>zatiaľ nezverejnené<span class="ov">overiť</span></dd></div>
+      <div class="k-row"><dt>Platba</dt><dd>len v hotovosti · darčekové poukážky áno</dd></div>
+    </dl>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="w ft"><b>Corner Barber Shop</b><span>Neoficiálny návrh webu · webdavid.sk · 2026</span></div>
+</footer>
+
+<div class="mbar"><a href="tel:+421944387587">Zavolať</a><a href="https://www.google.com/maps/search/Corner+Barber+Shop+Sobotské+námestie+42+Poprad" target="_blank" rel="noopener">Mapa</a></div>
